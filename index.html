@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dear 🎂</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+Lao:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Itim', 'Noto Sans Lao', cursive;
+            background: linear-gradient(135deg, #ffe1ed, #fff0f5, #e8dfff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            padding: 25px 15px;
+            color: #9b4770;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.88);
+            width: 100%;
+            max-width: 430px;
+            padding: 35px 22px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 12px 40px rgba(217, 112, 147, 0.2);
+            border: 3px solid white;
+            position: relative;
+            z-index: 2;
+            animation: appear 1s ease;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .top-text {
+            font-size: 16px;
+            color: #c47b9e;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 38px;
+            color: #ed77a8;
+            margin: 12px 0;
+            text-shadow: 2px 2px 0 white;
+        }
+
+        .name {
+            font-size: 35px;
+            color: #b56bd1;
+            margin-bottom: 15px;
+        }
+
+        .cake {
+            font-size: 90px;
+            margin: 15px 0;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .subtitle {
+            font-size: 18px;
+            line-height: 1.9;
+            margin: 15px 0;
+        }
+
+        .divider {
+            color: #f19bc0;
+            font-size: 23px;
+            margin: 15px 0;
+        }
+
+        button {
+            font-family: inherit;
+            font-size: 19px;
+            font-weight: bold;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .open-btn {
+            background: linear-gradient(45deg, #ff8eb7, #d6a1f5);
+            color: white;
+            box-shadow: 0 5px 15px #f5c2dc;
+        }
+
+        button:hover {
+            transform: scale(1.06);
+        }
+
+        #message {
+            display: none;
+            margin-top: 25px;
+            padding: 20px 15px;
+            background: #fff0f6;
+            border-radius: 20px;
+            line-height: 2;
+            font-size: 17px;
+            animation: appear 0.8s ease;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #c48ba7;
+        }
+
+        .floating {
+            position: fixed;
+            top: -30px;
+            pointer-events: none;
+            z-index: 1;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .heart {
+            color: #ff85ad;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <p class="top-text">♡ A SPECIAL DAY FOR YOU ♡</p>
+
+        <h1>Happy Birthday</h1>
+
+        <div class="name">Dear 🎀</div>
+
+        <div class="cake" onclick="celebrate()">🎂</div>
+
+        <p class="subtitle">
+            ສຸກສັນວັນເກີດລິເດຍ 💗<br>
+            ຫຍ້ອນຫຼັງ
+        </p>
+
+        <div class="divider">୨୧ ───── ♡ ───── ୨୧</div>
+
+        <button class="open-btn" onclick="openMessage()">
+            💌 ເປີດຄຳອວຍພອນ
+        </button>
+
+        <div id="message">
+            <h2>🎉 ສຸກສັນວັນເກີດ 🎉</h2>
+
+            ຂໍໃຫ້ລິເດຍ    ມີຄວາມສຸກຫຼາຍໆ 💖<br>
+            ພົບເຈິແຕ່ສິ່ງດີໆໃນຊີວິດ 🌷<br>
+            ຄິດຫຍັງກໍຂໍໃຫ້ສົມຫວັງ ✨<br>
+            ມີແຕ່ຄົນຮັກ ແລະ ຄອຍຢູ່ຂ້າງໆ 🫶🏻<br>
+            ຂໍໃຫ້ຍິ້ມໄດ້ໃນທຸກໆມື້ເດີ 💐<br>
+            ເສັ່ງກໍໃຫ້ໄດ້ເກຣດ A ທຸກວິຊາເດີ<br><br>
+            <strong>
+                ສຸກສັນວັນເກີດຫຍ້ອນຫຼັງ 💗
+            </strong>
+
+            <p style="margin-top: 15px; font-size: 25px;">
+                🎁 🎂 💗 🌷
+            </p>
+        </div>
+
+        <div class="footer">
+            Made with <span class="heart">♥</span> just for Dear
+        </div>
+
+    </div>
+
+    <script>
+        let opened = false;
+
+        function openMessage() {
+            const message = document.getElementById("message");
+
+            if (!opened) {
+                message.style.display = "block";
+                opened = true;
+                celebrate();
+            } else {
+                message.style.display = "none";
+                opened = false;
+            }
+        }
+
+        function celebrate() {
+            const emojis = ["💗", "💕", "🌸", "✨", "🎉", "🎀"];
+
+            for (let i = 0; i < 30; i++) {
+                const item = document.createElement("div");
+
+                item.className = "floating";
+                item.textContent =
+                    emojis[Math.floor(Math.random() * emojis.length)];
+
+                item.style.left = Math.random() * 100 + "vw";
+                item.style.fontSize = (15 + Math.random() * 20) + "px";
+                item.style.animationDuration = (2 + Math.random() * 3) + "s";
+
+                document.body.appendChild(item);
+
+                setTimeout(() => {
+                    item.remove();
+                }, 5000);
+            }
+        }
+    </script>
+
+</body>
+</html>
